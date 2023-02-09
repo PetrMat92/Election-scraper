@@ -37,6 +37,7 @@ def validate_command_line_arguments() -> tuple:
 
     return url, file_name
 
+
 def city_names_scraper(url) -> list:
     """The function city_names_scraper performs following tasks:
      1. takes a URL as input and returns a list of city codes and names
@@ -51,6 +52,8 @@ def city_names_scraper(url) -> list:
     city_names = [city.text for city in doc.find_all("td", class_="overflow_name")]
     city_list = [city_codes, city_names]
     return city_list
+
+
 def get_city_url(url: str) -> list[str]:
     """This function performs following tasks:
      1) It starts by defining a core_url which will be used as the base for all the city URLs that will be extracted.
@@ -76,6 +79,7 @@ def get_city_url(url: str) -> list[str]:
             if a:
                 city_url.append(core_url + a["href"])
     return city_url
+
 
 def voter_turnout_data(city_url) -> list:
     """ This function performs following tasks:
@@ -128,6 +132,7 @@ def get_political_parties(city_url: list) -> list[list]:
     political_parties.extend(table1 + table2)
     return political_parties
 
+
 def get_votes(city_url: list) -> list:
     """ This function performs following tasks:
      1) The function finds for each city URL all elements with the class "cislo"
@@ -143,6 +148,7 @@ def get_votes(city_url: list) -> list:
         table2 = [j.text.replace("\xa0", "") for j in doc_2.find_all("td", class_="cislo", headers="t2sa2 t2sb3")]
         total_votes.append(table1 + table2)
     return total_votes
+
 
 def write_csv(file_name, city_list, data_collection, political_parties, total_votes) -> None:
     """ This function writes data collected from websites to a CSV file.
