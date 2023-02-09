@@ -1,5 +1,5 @@
 # Election-scraper
-Engeto project #3: This script is designed to scrape election data from the 2017 Chamber of Deputies elections in the Czech Republic via the official election results website: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ and store the data in a CSV file.
+Engeto project #3: This script is designed to scrape election data from the 2017 Chamber of Deputies elections in the Czech Republic via the official election results website: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ and store the data in a CSV file. To run this program, you need to select election district you want to scrape from abovementioned link (e.g for Pardubice district you must select: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5302) and a name of the CSV file with .csv extension (see Deployment section).
 
 # Libraries
 The script is written in Python and uses the following libraries:
@@ -18,12 +18,9 @@ City URL Scraper: The script uses the get_city_url function to extract all the c
 
 Voter Turnout Data: The script uses the voter_turnout_data function to extract data from the city URLs. The function uses the BeautifulSoup library and the requests library to extract data from the city URLs. The data is collected in the form of three lists: registered_voters, ballot_papers, and valid_votes.
 
-Political Parties and Votes Scraper: The script uses the get_political_parties and get_votes functions to to extract names of political parties and number of votes from the city URLs.
-
-
+Political Parties and Votes Scraper: The script uses the get_political_parties and get_votes functions to extract names of political parties and number of votes from each city listed in the district.
 
 Data Storage: The script uses the CSV library to store the data in a CSV file with the name specified by the user.
-
 
 ## Deployment
 
