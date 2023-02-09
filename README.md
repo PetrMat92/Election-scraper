@@ -1,5 +1,5 @@
 # Election-scraper
-Engeto project #3: This script is designed to scrape election data from the 2017 Chamber of Deputies elections in the Czech Republic via the official election results website: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ and store the data in a CSV file. To run this program, you need to select election district you want to scrape from abovementioned link (e.g for Pardubice district you must select: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5302) and a name of the CSV file with .csv extension (see Deployment section).
+Engeto project #3: This script is designed to scrape election data from the 2017 Chamber of Deputies elections in the Czech Republic via the official election results website: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ and store the data in a CSV file. To run this program, you need to select election district you want to scrape from abovementioned website (e.g for Pardubice district you must select following URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5302) and a pass a name of the CSV file with .csv extension (see Deployment section).
 
 # Libraries
 The script is written in Python and uses the following libraries:
