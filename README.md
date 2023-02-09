@@ -18,6 +18,10 @@ City URL Scraper: The script uses the get_city_url function to extract all the c
 
 Voter Turnout Data: The script uses the voter_turnout_data function to extract data from the city URLs. The function uses the BeautifulSoup library and the requests library to extract data from the city URLs. The data is collected in the form of three lists: registered_voters, ballot_papers, and valid_votes.
 
+Political Parties and Votes Scraper: The script uses the get_political_parties and get_votes functions to to extract names of political parties and number of votes from the city URLs.
+
+
+
 Data Storage: The script uses the CSV library to store the data in a CSV file with the name specified by the user.
 
 
