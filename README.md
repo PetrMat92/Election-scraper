@@ -27,6 +27,6 @@ Data Storage: The script uses the CSV library to store the data in a CSV file wi
 To run the script, you need to pass two command-line arguments: the URL and the file name. For example:
 
 ```bash
-  python election_data.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7101" file_name.csv
+  python election_scraper.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7101" file_name.csv
 
 ```
