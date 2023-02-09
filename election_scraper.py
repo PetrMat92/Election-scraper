@@ -1,3 +1,10 @@
+"""
+projekt_3.py: třetí projekt do Engeto Online Python Akademie
+author: Petr Matějíček
+email: petrmatejicek92@gmail.com
+discord: Petr_Mat#1921
+"""
+
 '#imports'
 import requests
 from bs4 import BeautifulSoup
