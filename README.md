@@ -30,3 +30,11 @@ To run the script, you need to pass two command-line arguments: the URL and the 
   python election_scraper.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7101" file_name.csv
 
 ```
+
+# Author
+ 
+ Petr Matějíček
+ 
+ Email: matejicekpetr92@gmail.com
+ 
+ Discord: Petr_Mat#1921
