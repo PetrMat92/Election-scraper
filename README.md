@@ -4,7 +4,17 @@ Engeto project #3: This script is designed to scrape election data from the 2017
 # Libraries
 The script is written in Python and uses the following libraries:
 
-Requests, BeautifulSoup, Argparse, Re, CSV, OS,
+Requests
+
+BeautifulSoup
+
+Argparse
+
+Re
+
+CSV
+
+OS
 
 # Features
 
