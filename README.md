@@ -38,5 +38,3 @@ To run the script, you need to pass two command-line arguments: the URL and the 
  Email: matejicekpetr92@gmail.com
  
  Discord: Petr_Mat#1921
-
-This is a Git test 
