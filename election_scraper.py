@@ -142,7 +142,7 @@ def voter_turnout_data(city_url) -> list:
     return data_collection
 
 
-def get_political_parties(city_url: list) -> list[list]:
+def get_political_parties(city_url: list) -> list[str]:
     """This function performs following tasks:
     1) The function extracts data from the first city URL in the `city_url` list.
     2) It finds all the elements with the class "overflow_name" and headers "t1sa1 t1sb2" and "t2sa1 t2sb2".
@@ -246,37 +246,12 @@ def main() -> None:
         url, file_name = validate_command_line_arguments()
         print(
             f'Initializing program with URL "{url}" and file name "{file_name}"\n'
-            f"Extracting data..."
-        )
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
+            f"Extracting data...")
         city_list = city_names_scraper(url)
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
         city_url = get_city_url(url)
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
         data_collection = voter_turnout_data(city_url)
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
         political_parties = get_political_parties(city_url)
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
         total_votes = get_votes(city_url)
-    except ValueError as error:
-        print(f"Error: {error}")
-
-    try:
         file = write_csv(
             file_name, city_list, data_collection, political_parties, total_votes
         )
