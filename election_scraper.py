@@ -223,7 +223,7 @@ def write_csv(
                 + total_votes[i]
             )
     print(
-        f"Your file {file_name} has been successfully generated and stored in following directory:{file_path}"
+        f"Your file {file_name} has been successfully generated and stored in the following directory:{file_path}"
     )
 
 
